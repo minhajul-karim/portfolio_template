@@ -11,7 +11,7 @@
   --ff-secondary: "Source Code Pro", monospace;
 
   --fw-reg: 300;
-  --fw-reg: 900;
+  --fw-bold: 900;
 
   --cl-light: #fff;
   --cl-dark: #303030;
@@ -43,4 +43,67 @@ body {
   background: var(--cl-light);
   color: var(--cl-dark);
   line-height: 1.6;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.menu__col {
+  display: none;
+}
+
+header,
+section {
+  padding: 5em 1em;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+  display: block;
+}
+
+/* Menu */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Introduction */
+
+.intro {
+  text-align: center;
+}
+
+.intro__name {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-reg);
+}
+
+.section__subtitle--intro {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h2);
+  background: var(--cl-accent);
+  margin-bottom: 0.6em;
+}
+
+.intro__img {
+  display: block;
+  width: 95%;
+  max-width: 600px;
+  height: 350px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+  }
 }
