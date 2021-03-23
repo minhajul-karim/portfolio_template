@@ -154,6 +154,10 @@ strong {
   transition: 0.2s ease-in-out;
 }
 
+.menu__col--open .menu__trigger {
+  position: fixed;
+}
+
 .menu__col--open .menu__col {
   transform: translateX(0);
 }
