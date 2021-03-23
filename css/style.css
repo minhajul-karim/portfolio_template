@@ -37,6 +37,10 @@
 
 /* General styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -480,4 +484,26 @@ strong {
 
 .footer__nav-item + .footer__nav-item {
   margin-left: 3em;
+}
+
+/* Project Details */
+
+.project-details {
+  padding: 0 1.5em 1em;
+}
+
+.project-details__text {
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  margin: 1em 0;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-details__img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
